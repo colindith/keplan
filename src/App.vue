@@ -1,22 +1,31 @@
 <template>
   <div id="app">
-    <Navigation />
+    <SideNavigation />
+    <!-- <Navigation />
     <Friends />
-    <FooterComponent />
+    <FooterComponent /> -->
+    <!-- <router-link to="account">Account</router-link> -->
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Navigation from './components/Navigation'
-import Friends from './components/Friends'
-import FooterComponent from './components/Footer'
+import SideNavigation from './components/SideNavigation'
+// import Navigation from './components/Navigation'
+// import Friends from './components/Friends'
+// import FooterComponent from './components/Footer'
+// import Account from './components/Account'
+import Price from './components/Price'
+import config from './components/Config'
 
 export default {
   name: 'app',
   components: {
-    Navigation,
-    Friends,
-    FooterComponent,
+    // Navigation,
+    // Friends,
+    // FooterComponent,
+    SideNavigation,
+    Price
   }
 }
 </script>
