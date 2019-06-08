@@ -16,7 +16,8 @@ import SideNavigation from './components/SideNavigation'
 // import FooterComponent from './components/Footer'
 // import Account from './components/Account'
 import Price from './components/Price'
-import config from './components/Config'
+import Config from './components/Config'
+import Login from './components/Login'
 
 export default {
   name: 'app',
@@ -25,7 +26,8 @@ export default {
     // Friends,
     // FooterComponent,
     SideNavigation,
-    Price
+    Price,
+    Login,
   }
 }
 </script>

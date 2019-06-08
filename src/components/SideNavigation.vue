@@ -18,6 +18,7 @@
       <div class="topnav-right">
         <a href="#search">Search</a>
         <a href="#about">About</a>
+        <router-link to="/login" active-class="active">Login </router-link>
       </div>
     </div>
   </div>

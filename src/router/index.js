@@ -6,6 +6,7 @@ import Home from '@/components/Home'
 // import Friends from '@/components/Friends'
 import Price from '@/components/Price'
 import Config from '@/components/Config'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/config',
       name: 'Config',
       component: Config
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     },
   ]
 })
