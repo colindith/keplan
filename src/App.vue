@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <SideNavigation />
+    <SnackBar />
     <!-- <Navigation />
     <Friends />
     <FooterComponent /> -->
@@ -18,6 +19,8 @@ import SideNavigation from './components/SideNavigation'
 import Price from './components/Price'
 import Config from './components/Config'
 import Login from './components/Login'
+import Signup from './components/Signup'
+import SnackBar from './components/SnackBar'
 
 export default {
   name: 'app',
@@ -28,6 +31,8 @@ export default {
     SideNavigation,
     Price,
     Login,
+    Signup,
+    SnackBar,
   }
 }
 </script>

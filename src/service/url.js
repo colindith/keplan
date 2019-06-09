@@ -9,6 +9,6 @@ const host = env.HOST.replace(/"/g, '')
 export default {
   auth_service: {
       login: host + 'user/login',
-      logout: host + 'user/logout/'
+      signup: host + 'user/registry'
   },
 }

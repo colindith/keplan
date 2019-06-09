@@ -4,7 +4,7 @@
       <h2 class="title1">Login</h2>
       <div class="widget-shadow">
         <div class="login-body">
-          <form action="#" method="post">
+          <form onsubmit="return false;">
             <input type="text" class="user" name="username" placeholder="Enter Your Username" required="" v-model="username">
             <input type="password" name="password" class="lock" placeholder="Password" required="" v-model="password">
             <div class="forgot-grid">
@@ -14,13 +14,14 @@
               </div>
               <div class="clearfix"> </div>
             </div>
-            <a href="#" class="btn btn-success" @click="submitEntry">Submit</a>
-            <input type="submit" name="Sign In" value="Sign In">
+            <!-- <a href="#" class="btn btn-success" @click="submitLogin">Sign In</a> -->
+            <input type="submit" name="Sign In" value="Sign In" @click="submitLogin">
             <div class="registration">
               Don't have an account ?
-              <a class="" href="signup.html">
+              <!-- <a class="" href="signup.html">
                 Create an account
-              </a>
+              </a> -->
+              <router-link to="/signup">Create an account </router-link>
             </div>
           </form>
         </div>
@@ -43,7 +44,7 @@ export default {
     };
   },
   methods: {
-    submitEntry: function() {
+    submitLogin: function() {
       this.ajaxRequest = true;
       this.$http.post(url.auth_service.login, {
         username: this.username,
